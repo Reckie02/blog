@@ -16,6 +16,7 @@ main{
 
 .logo{
   display: flex;
+  justify-content: space-around;
   align-items: center;
   text-justify: center;
   text-align: center;
@@ -26,6 +27,7 @@ main{
   padding: 5%;
   
 }
+
 
 ol:after,
 ul:after {
@@ -641,8 +643,9 @@ textarea.form-control {
   position: relative;
   text-align: center;
   background-color: #99ccff;
-  padding-top: 121px;
+  padding-top: 100px;
   align-items: flex-start;
+  height:20% ;
 }
 
 .bg-blue-transparent { background-color: rgb(102 153 204 / 0.8); }
