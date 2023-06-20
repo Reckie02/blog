@@ -809,7 +809,7 @@ textarea.form-control {
   overflow: hidden;
   margin: 0;
   max-width: 200px;
-	height: auto;
+	height: 300px;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
