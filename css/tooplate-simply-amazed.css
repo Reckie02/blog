@@ -3,17 +3,28 @@
 /* <<< Reset CSS >>> */
 body {
   font-family: cartena;
-  font-size: 18px;
-  color: whitesmoke;
+  font-size: 15px;
   line-height: 1.5;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
 
-.logo-fa{
-  
+main{
+  margin: 0 auto;
+}
 
+.logo{
+  display: flex;
+  align-items: center;
+  text-justify: center;
+  text-align: center;
+  width: 100%;
+ font-weight: bold;
+-webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  padding: 5%;
+  
 }
 
 ol:after,
@@ -27,11 +38,11 @@ ul:after {
 
 }
 
-pre {
+/*pre {
   border-left: 10px solid #ccc;
   max-width: 500px;
 }
-
+*/
 /* <<< Headings >>> */
 h1 { font-size: 50px;
      font-family:sofia;
@@ -208,24 +219,21 @@ textarea.form-control {
 
 /* <<< Mobile Menu button >>> */
 .navbar-button {
-  width: 50px;
-  height: 47px;  
-  padding: 0;
-  margin: 0;
+  font-size: 4vmin;
+  color: whitesmoke;  
+  padding: 2px;
+  margin: 2px;
   outline: 0;
   border: 0;
   z-index: 9;
-  -webkit-box-shadow: none;
-  box-shadow: none;
   position: fixed;
-  top: 0px;
-  right: 0px;
-  background-color: #fff;
-  padding: 10px;
+  top: 10px;
+  right: 30px;
   border-radius: 0;
   display: none;
+  background-color: #f1f1;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.3);
-  box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.3);*/
 }
 
 @media (max-width: 991px) {
@@ -237,14 +245,14 @@ textarea.form-control {
 }
 
 .navbar-button:focus {
-  border: 0;
+  border: 10px;
   outline: 0;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.3);
   box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.3);
 }
 
 .navbar-button .menu_icon {
-  margin: 0;
+  margin: 2px;
   padding-top: 1px;
   float: left;
   width: 25px;
@@ -253,20 +261,20 @@ textarea.form-control {
   cursor: pointer;
 }
 
-.navbar-button .menu_icon .icon-bar {
+.navbar-button .icon-bar {
   display: block;
   position: absolute;
   opacity: 1;
   width: 25px;
   height: 3px;
-  background-color: #6699cc;
+  background-color: #111;
   margin: 0 auto;
   left: 0;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 
-.navbar-button .menu_icon .icon-bar:nth-child(1) {
+.navbar-button .icon-bar:nth-child(1) {
   top: 10px;
   -webkit-transform: rotate(145deg);
   /* WebKit */
@@ -277,13 +285,13 @@ textarea.form-control {
   /* CSS3 */
 }
 
-.navbar-button .menu_icon .icon-bar:nth-child(2) {
+.navbar-button  .icon-bar:nth-child(2) {
   top: 8px;
   opacity: 0;
   left: -10px;
 }
 
-.navbar-button .menu_icon .icon-bar:nth-child(3) {
+.navbar-button .icon-bar:nth-child(3) {
   top: 10px;
   -webkit-transform: rotate(-145deg);
   /* WebKit */
@@ -307,12 +315,8 @@ textarea.form-control {
 .navbar-button.collapsed .icon-bar:nth-child(1) {
   top: 0;
   -webkit-transform: rotate(0deg);
-  /* WebKit */
-  /* Mozilla */
-  /* Opera */
-  /* Internet Explorer */
   transform: rotate(0deg);
-  /* CSS3 */
+ 
 }
 
 .navbar-button.collapsed .icon-bar:nth-child(2) {
@@ -336,11 +340,12 @@ textarea.form-control {
 .navbar {
   padding: 0;
   margin-bottom: 0;
+
 }
 .icons{
-  margin-left: 50px;
-  font-size: 3vmin;
-  justify-content: space-around;
+  margin: 20% 20px 40px 30% ;
+  font-size: 4vmin;
+  justify-content: space-between;
   padding-right: 10px;
   
 }
@@ -356,10 +361,15 @@ textarea.form-control {
   .navbar .navbar-collapse {
     padding-left: 31px;
     padding-right: 21px;
+    font-size: 4vmin;
   }
 }
 
-.navbar .navbar-nav { position: relative; }
+.navbar .navbar-nav { 
+  position: relative; 
+  justify-items: space-between;
+
+}
 
 @media (max-height: 580px) {
   .navbar .navbar-nav { padding-top: 30px; }
@@ -369,14 +379,15 @@ textarea.form-control {
   content: '';
   position: absolute;
   width: 1px;
-  background-color: #fff;
+/*  background-color: #fff;*/
   height: 100%;
   top: 0;
+  background-color: transparent;
 }
 
 .navbar .navbar-nav > .nav-item {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 4vmin;
   background-image: url(../img/menu-item-bg.png);
   background-position: left center;
   background-repeat: no-repeat;
