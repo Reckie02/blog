@@ -8,6 +8,7 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+  color: whitesmoke;
 }
 
 main{
@@ -15,6 +16,7 @@ main{
 }
 
 .logo{
+  color: #212529;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -94,7 +96,7 @@ a:focus {
 /* <<< btn-primary >>> */
 .btn-primary {
   color: #fff;
-  background-color: #356ba2;
+  background-color: #212529;
   border-color: transparent;
 }
 
@@ -141,7 +143,7 @@ a:focus {
 .form-control:-ms-input-placeholder { color: white; }
 
 .form-control:focus {
-  border-bottom: 1px solid #356ba2;
+  border-bottom: 1px solid #212529;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -180,7 +182,9 @@ textarea.form-control {
   right: 0;
   width: 26%;
   height: 100%;
-  background-color: #356ba2;
+  background-color: #212529;
+  opacity: 0.9;
+  text-emphasis-color: whitesmoke;
   overflow-y: auto;
   z-index: 1;
   display: -webkit-box;
@@ -1001,7 +1005,8 @@ figure.effect-julia:hover p {
 .gallery-section .slick-dots li button { display: none; }
 
 .contact-section {
-  background-color: #6699cc;
+  background-color: #212529;
+  opacity: 0.5;
   flex-direction: column;
   justify-content: center;
 }
@@ -1022,7 +1027,9 @@ figure.effect-julia:hover p {
   margin-left: auto;
   margin-right: auto;
 }
-
+.contact-section form{
+  opacity: 0.7;
+}
 @media (max-width: 767px) {
   .contact-section .contact-details { margin-bottom: 30px; }
 }
@@ -1063,20 +1070,7 @@ figure.effect-julia:hover p {
 }
 
 .contact-section .contact-details ul li a:hover { color: #99ccff; }
-.contact-section .map { text-align: center; }
 
-.map-outer{
-  position:relative;
-  height:400px;
-  width:100%;
-}
-
-.gmap-canvas {
-  overflow:hidden;
-  background:none!important;
-  height:400px;
-  width:100%;
-}
 
 /* <<< footer >>> */
 .footer {
