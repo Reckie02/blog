@@ -69,13 +69,13 @@ img {
 
 /* <<< anchor >>> */
 a {
-  color: #99ccff;
+  color: white;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-  color: green;
+  color: lightblue;
   text-decoration: none;
 }
 
@@ -724,7 +724,10 @@ textarea.form-control {
   padding-top: 90px!important;
   padding-bottom: 90px!important;
   min-height: 850px;
-  background-color: #6699cc;
+  background-color: gray;
+}
+.work-section .icn{
+  color: pink;
 }
 
 .work-section .container { max-width: 1242px; }
@@ -777,11 +780,12 @@ textarea.form-control {
 }
 
 @media (max-width: 767px) {
-  .work-section .item .icn { margin: 0 auto 20px; }
+  .work-section .item .icn { 
+    margin: 0 auto 20px; }
 }
 
 .work-section .item h3 {
-  color: #ffccff;
+  color: lightblue;
   text-transform: uppercase;
   font-size: 27px;
   letter-spacing: -1px;
@@ -893,28 +897,28 @@ textarea.form-control {
 /***** Julia *****/
 /*---------------*/
 
-figure.effect-julia {
+figure.blog-item {
 	background: #2f3238;
 }
 
-figure.effect-julia img {
+figure.blog-item img {
 	-webkit-transition: opacity 1s, -webkit-transform 1s;
 	transition: opacity 1s, transform 1s;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
-figure.effect-julia figcaption {
+figure.blog-item figcaption {
 	display: flex;
   align-items: center;
 }
 
-figure.effect-julia h2 {
+figure.blog-item h2 {
 	position: relative;
 	padding: 0.5em 0;
 }
 
-figure.effect-julia p {
+figure.blog-item p {
 	display: inline-block;
 	margin: 0 0 0.25em;
 	padding: 0.4em 1em;
@@ -929,43 +933,43 @@ figure.effect-julia p {
 	transform: translate3d(-360px,0,0);
 }
 
-figure.effect-julia p:first-child {
+figure.blog-item p:first-child {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
 }
 
-figure.effect-julia p:nth-of-type(2) {
+figure.blog-item p:nth-of-type(2) {
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 }
 
-figure.effect-julia p:nth-of-type(3) {
+figure.blog-item p:nth-of-type(3) {
 	-webkit-transition-delay: 0.05s;
 	transition-delay: 0.05s;
 }
 
-figure.effect-julia:hover p:first-child {
+figure.blog-item:hover p:first-child {
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
 }
 
-figure.effect-julia:hover p:nth-of-type(2) {
+figure.blog-item:hover p:nth-of-type(2) {
 	-webkit-transition-delay: 0.05s;
 	transition-delay: 0.05s;
 }
 
-figure.effect-julia:hover p:nth-of-type(3) {
+figure.blog-item:hover p:nth-of-type(3) {
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 }
 
-figure.effect-julia:hover img {
+figure.blog-item:hover img {
 	opacity: 0.4;
 	-webkit-transform: scale3d(1.1,1.1,1);
 	transform: scale3d(1.1,1.1,1);
 }
 
-figure.effect-julia:hover p {
+figure.blog-item:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
